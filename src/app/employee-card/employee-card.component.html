@@ -1,0 +1,15 @@
+<div class="employee-card">
+  <mat-card class="employee-card-container">
+    <mat-card-header class="text-center">
+      <mat-card-title>{{ employee.name }}</mat-card-title>
+      <mat-card-subtitle>{{ employee.department }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p><strong>Email:</strong> {{ employee.email }}</p>
+      <p><strong>Joining Date:</strong> {{ employee.joiningDate | date }}</p>
+    </mat-card-content>
+    <mat-card-actions class="text-center">
+      <button mat-button (click)="deleteEmployee()">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

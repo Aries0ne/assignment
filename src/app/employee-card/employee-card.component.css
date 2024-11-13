@@ -1,0 +1,105 @@
+
+.employee-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.employee-card-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+mat-card-header {
+  text-align: center;
+}
+
+mat-card-title {
+  font-size: 1.5rem;
+}
+
+mat-card-subtitle {
+  font-size: 1rem;
+  color: gray;
+}
+
+mat-card-content p {
+  margin: 5px 0;
+}
+
+
+.container {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-lg-4 {
+  
+  padding: 15px;
+}
+
+.col-md-6 {
+  
+  padding: 10px;
+}
+
+.col-12 {
+  
+  padding: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .employee-card-container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  mat-card-title {
+    font-size: 1.25rem;
+  }
+
+  mat-card-subtitle {
+    font-size: 0.9rem;
+  }
+
+  mat-card-content p {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .employee-card-container {
+    padding: 10px;
+  }
+
+  mat-card-title {
+    font-size: 1.2rem;
+  }
+
+  mat-card-subtitle {
+    font-size: 0.85rem;
+  }
+
+  mat-card-content p {
+    font-size: 0.85rem;
+  }
+
+  mat-card-actions button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
