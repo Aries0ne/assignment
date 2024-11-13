@@ -35,7 +35,7 @@ export class AddEmployeeComponent implements OnInit {
     if (this.addEmployeeForm.valid) {
       this.employeeService.addEmployee(this.addEmployeeForm.value).subscribe(() => {
         alert('Employee added successfully');
-        this.router.navigate(['/dash']);
+        this.router.navigate(['/']);
       });
     }
   }
